@@ -1,5 +1,5 @@
 ## Install（安装）
-* 1.Ctrl+alt+T打开终端输入
+* Ctrl+alt+T打开终端输入
 
   `sudo apt-get install postgresql` 
   
@@ -24,3 +24,16 @@
   ####  `sudo service postgres start` 
   
   ####  `sudo service postgres stop` 
+  
+  ## 一些简单设置
+  
+  * 端口修改：找到postgresql.conf文件搜索port 修改，默认端口为5432
+  
+  * 打开日志收集功能:`logging_collector = on`
+  
+  * 日志路径：`#log_directory = 'pg_log'`
+  
+  * log file name pattern:`#log_filename = 'postgresql-%Y-%m-%d_%H%M%S.log'`
+  
+  其他配置参考文件：postgresql.conf.sample
+  
