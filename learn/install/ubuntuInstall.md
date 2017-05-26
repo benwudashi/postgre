@@ -26,6 +26,7 @@
   ####  `sudo service postgres stop` 
   
   ## 一些简单设置
+  * 修改postgres用户密码｀ \password postgres ｀
   
   * 端口修改：找到postgresql.conf文件搜索port 修改，默认端口为5432
   
