@@ -36,5 +36,8 @@
   
   * log file name pattern:`#log_filename = 'postgresql-%Y-%m-%d_%H%M%S.log'`
   
+  * 允许远程连接：修改postgresql.conf　修改成监听所有ip地址的连接请求｀listen_addresses = '*'｀，修改可访问的ｉｐ端，修改pg_hba.conf｀host    all         all         0.0.0.0/0      md5 ｀
+  
   其他配置参考文件：postgresql.conf.sample
+  
   
