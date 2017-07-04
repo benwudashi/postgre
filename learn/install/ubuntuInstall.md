@@ -17,6 +17,8 @@
   
   使用\l（字母）显示所有数据库 `\l`
   
+  使用\c（字母）显示所有数据库 `\c databaseName`
+  
 * Linux下使用service查看数据库启动状态
 
   #### `sudo service postgres status` 
@@ -24,6 +26,10 @@
   ####  `sudo service postgres start` 
   
   ####  `sudo service postgres stop` 
+  
+* 命令行连接postgres 
+
+  #### `psql -h <ip or hostName> -p port -databaseName -username`
   
   ## 一些简单设置
   * 修改postgres用户密码｀ \password postgres ｀
